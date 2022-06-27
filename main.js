@@ -2,8 +2,8 @@
 const questions = document.querySelectorAll(".question");
 //Ajout et suppression de classe dans les éléméents (article)
 questions.forEach(question => {
-    const questionBtn = question.querySelector(".question-btn");
-    questionBtn .addEventListener("click", function () {
+    const questionTitle = question.querySelector(".question-title");
+    questionTitle.addEventListener("click", function () {
         questions.forEach(item => {
             //Fait disparaitre le texte précédemment ouvert lors d'un clic  sur un autre bouton  
             if (item !== question) {

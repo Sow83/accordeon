@@ -33,14 +33,14 @@ h2{
 .container-question{
   max-width: 630px;
   height: auto;
-  margin: 200px auto;
+  margin: 60px auto;
   padding: 0 1rem ;
 }
 .question{
   background:white;
   border-radius: 5px;
   margin-bottom: 15px;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .question-title{
@@ -48,6 +48,8 @@ h2{
   justify-content: space-between;
   align-items: center;
   letter-spacing: .1rem; 
+  padding: .5rem 0;
+  cursor: pointer;
 }
 .question-btn{
   color: #c59d5f;
@@ -67,9 +69,11 @@ h2{
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   color:hsl(210, 22%, 49%);
   font-size: 1rem;
-  display: none;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
   line-height: 1.5rem;
-  transition: all 0.5ms ease-in-out;
+  transition: all 0.5s linear;
 }
 /* Fait disparaire le bouton "plus" quand on clic dessus (voir main.js)*/
 .show-text .plus-icon{
@@ -81,5 +85,7 @@ h2{
 }
 /* Montre le text quand on clic sur le bouton(voir main.js) */
 .show-text .question-text{
-  display: block;
+  height: 6rem;
+  visibility: visible;
+  transition: all 0.5s linear;
 }
