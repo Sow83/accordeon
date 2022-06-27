@@ -85,7 +85,7 @@ h2{
 }
 /* Montre le text quand on clic sur le bouton(voir main.js) */
 .show-text .question-text{
-  height: 6rem;
+  height: 11rem;
   visibility: visible;
   transition: all 0.5s linear;
 }
